@@ -1,0 +1,157 @@
+@import "color";
+
+/**   poratl  mange  common  scss  **/
+//分页
+.el-pagination {
+  .btn-next, .btn-prev {
+    padding: 0 6px;
+    color: #327ab7;
+    border: 1px solid #dedddd;
+    background-color: #fff;
+    &:disabled {
+      background-color: #e5e5e5;
+    }
+  }
+  .el-pager li {
+    color: #666;
+    margin-left: 3px;
+    border: 1px solid #dedddd;
+    &.active {
+      background-color: #40a0ff;
+      color: #fff;
+    }
+    &:last-child {
+      margin-right: 3px;
+    }
+  }
+}
+//弹窗
+.el-dialog__header {
+  padding-top: 15px;
+  border-bottom: 1px solid #bababa;
+  background-color: $mg-dh-bg;
+  .el-dialog__headerbtn {
+    top: 14px;
+    font-size: 24px;
+    .el-dialog__close {
+      color: $mg-dh-cc;
+    }
+  }
+}
+.el-dialog__footer {
+  padding-top: 0;
+  text-align: center;
+}
+//弹窗 基础table排版
+.bs-table {
+  width: 100%;
+  tr {
+    height: 52px;
+    min-height: 52px;
+    border: 1px solid #c5d0dc;
+    td {
+      padding: 12px 15px;
+      &:nth-child(odd) {
+        width: 10%;
+        text-align: right;
+        border-right: 1px solid #c5d0dc;
+        background-color: #f9f9f9;
+      }
+      &:nth-child(even) {
+        width: 40%;
+      }
+    }
+  }
+}
+/**   poratl  mange  common **/
+
+/**  manage main scss   **/
+.loginForm.mg {
+  .el-input__inner {
+    height: 48px;
+    line-height: 48px;
+  }
+}
+.loginForm .lgpt-par-wp .el-form-item__content {
+  line-height: 46px;
+}
+/**  .target-mg是管理端的一个class标识  门户端是.target-pl，主要是用于区分样式 **/
+.system-mg {
+  .headerbg {
+    background: url("../assets/main/bg_header_mg.jpg") no-repeat center center;
+    background-size: 100% 100%;
+  }
+  /**   el rewrite  **/
+  //列表
+  .el-table th {
+    background-color: $mg-tab-th-bg;
+    text-align: center;
+    color: #fff;
+  }
+  .el-aside{
+    background-color: $mg-nav-con-bg;
+  }
+  //导航
+  .el-submenu__title {
+    background-color: $mg-nav-im-bg;
+    color: #fff;
+    i {
+      color: #fff;
+    }
+  }
+  .el-menu {
+    border-right: none;
+  }
+  .is-opened .el-submenu__title {
+    background-color: $mg-nav-imact-bg;
+  }
+  .el-submenu .el-menu-item {
+    background: $mg-nav-imdm-bg;
+    color: #fff;
+    &.is-active {
+      background: $mg-nav-imdmact-bg;
+      color: #40a0ff;
+    }
+  }
+
+  /**   el rewrite  **/
+}
+/**  manage main css   **/
+
+/**  portal main scss   **/
+.loginForm.pl {
+  .el-input__inner {
+    border: none;
+  }
+}
+.system-pl{
+  .headerbg {
+    background: url("../assets/main/bg_header_pl.jpg") no-repeat center center;
+    background-size: 100% 100%;
+  }
+  //列表
+  .el-dialog .el-table th {
+    background-color: #f9f9f9;
+    color: #909399;
+  }
+  .el-table th {
+    background-color: $pl-tab-th-bg;
+    text-align: center;
+    color: #fff;
+  }
+  .el-aside{
+    background-color: $pl-nav-con-bg;
+  }
+  .el-menu {
+    border-right: none;
+    .el-menu-item {
+      background: $pl-nav-imdm-bg;
+      color: #fff;
+      &.is-active {
+        background: $pl-nav-imdmact-bg;
+        color: #fff;
+      }
+    }
+  }
+}
+/**  portal main scss   **/
